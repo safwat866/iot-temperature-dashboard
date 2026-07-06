@@ -37,7 +37,9 @@ const Status = () => {
       return;
     }
     const timestamp = localStorage.getItem("timestamp");
-    setTime(formatTime(timestamp));
+    if (timestamp) {
+      setTime(formatTime(timestamp));
+    }
   }, [status]);
 
   // const currentTime = new Date();
@@ -54,7 +56,7 @@ const Status = () => {
       <div>Highest: {dht.temp}°C</div>
       <div>Lowest: {dht.temp}°C</div>
       <div>Average: {dht.temp}°C</div>
-      <div>Last update: {time}</div>
+      {time && <div>Last update: {time}</div>}
     </div>
   );
 };
