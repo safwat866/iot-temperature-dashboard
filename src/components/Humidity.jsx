@@ -5,7 +5,7 @@ const Humidity = ({ humidity }) => {
   return (
     <div>
       <h1 className="text-center font-bold text-2xl mb-4 mt-18">
-        Current Humidity:
+        Current Room Humidity:
       </h1>
       <GaugeComponent
         value={humidity}

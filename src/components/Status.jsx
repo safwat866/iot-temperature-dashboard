@@ -53,9 +53,6 @@ const Status = () => {
   return (
     <div className="mb-12">
       <div>Device: {state}</div>
-      <div>Highest: {dht.temp}°C</div>
-      <div>Lowest: {dht.temp}°C</div>
-      <div>Average: {dht.temp}°C</div>
       {time && <div>Last update: {time}</div>}
     </div>
   );

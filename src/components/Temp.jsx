@@ -4,7 +4,7 @@ import { GaugeComponent } from "react-gauge-component";
 const Temp = ({temp}) => {
   return (
     <div>
-        <h1 className='text-center font-bold text-2xl mb-4'>Current Temperature:</h1>
+        <h1 className='text-center font-bold text-2xl mb-4'>Current Room Temperature:</h1>
       <GaugeComponent
         value={temp}
         type="semicircle"
